@@ -1,9 +1,9 @@
-t=int(input())
-box=[]
-for i in range(t):
-    n=int(input())
+stack=[]
+
+for i in range(int(input())):
+    n = int(input())
     if n == 0:
-        box.pop()
-    else:    
-        box.append(n)
-print(sum(box))
+       stack.pop()
+    else:
+        stack.append(n)
+print(sum(stack))
