@@ -1,4 +1,5 @@
-score=[]
+total = []
 for _ in range(5):
-    score.append(sum(map(int,input().split())))
-print(score.index(max(score))+1,max(score))
+    score = list(map(int, input().split()))
+    total.append(sum(score))
+print(total.index(max(total))+1, max(total))
